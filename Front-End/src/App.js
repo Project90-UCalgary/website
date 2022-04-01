@@ -1,20 +1,20 @@
 // Libraries
+// eslint-disable-next-line no-unused-vars
 import { Routes, Route, Link } from "react-router-dom";
+// import { tsParticles } from "tsparticles";
+
+// Components
+import NavBar from './Components/NavBar'
 
 // Style
 import './App.scss';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        <ul className="App-Pages-List">
-          <li className="Home">
-            {/* <div className="Home-div"> */}
-            <ion-icon name="home-outline"></ion-icon>
-            {/* </div> */}
-          </li>
-        </ul>
+        <NavBar />
       </header>
     </div>
   );
