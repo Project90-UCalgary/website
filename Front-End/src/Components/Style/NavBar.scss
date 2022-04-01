@@ -1,0 +1,33 @@
+// imports
+@import "./Variables/backgrounds";
+@import "./Variables/colors";
+@import "./Variables/sizes";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+
+  .logo {
+    width: $logo_width;
+    height: $logo_height;
+  }
+
+  .btn {
+    border-radius: 15px;
+  }
+
+  .offcanvas {
+    background-color: $global_background;
+    width: 60%;
+
+    .logo {
+      width: 60%;
+      height: 90%;
+    }
+  }
+}
