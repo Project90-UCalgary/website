@@ -11,16 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-#tsparticles {
-  display: flex;
-  position: absolute;
-  height: 20% !important;
-  width: 100% !important;
-
-  canvas {
-    position: fixed;
-    height: 20% !important;
-    width: 100% !important;
-  }
-}
