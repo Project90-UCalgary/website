@@ -11,10 +11,10 @@ import ParticlesContainer from "./ParticlesContainer";
 export default function Home() {
   return (
     <Fragment>
-      <container className="home-container">
+      <div className="home-container">
         <ParticlesContainer />
         <Moto />
-      </container>
+      </div>
     </Fragment>
   );
 }
