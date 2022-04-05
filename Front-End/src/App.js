@@ -1,6 +1,5 @@
 // Libraries
-// eslint-disable-next-line no-unused-vars
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 // Style
 import './App.scss';
@@ -16,7 +15,9 @@ function App() {
       <header className="App-header">
         <NavBar />
       </header>
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }
