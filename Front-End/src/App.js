@@ -5,8 +5,8 @@ import { Routes, Route } from "react-router-dom";
 import './App.scss';
 
 // Components
-import NavBar from './Components/NavBar';
-import Home from "./Components/Home";
+import NavBar from './Components/_NavBar/NavBar';
+import Home from "./Components/_Homepage/Home";
 
 function App() {
 

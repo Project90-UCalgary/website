@@ -1,5 +1,8 @@
 // Style
-import "./Style/NavBar.scss";
+import "../Style/_NavBar/NavBar.scss";
+
+// Components
+import Links from "./OffCanvas_Links";
 
 export default function NavBar(props) {
   return (
@@ -34,7 +37,9 @@ export default function NavBar(props) {
             aria-label="Close"
           ></button>
         </div>
-        <div className="offcanvas-body">...</div>
+        <div className="offcanvas-body">
+          <Links />
+        </div>
       </div>
     </div>
   );

@@ -2,11 +2,11 @@
 import { Fragment } from "react";
 
 // Style
-import "./Style/_Homepage/Home.scss";
+import "../Style/_Homepage/Home.scss";
 
 // Components
-import Moto from "./_Homepage/Moto";
-import ParticlesContainer from "./_Homepage/ParticlesContainer";
+import Moto from "./Moto";
+import ParticlesContainer from "./ParticlesContainer";
 
 export default function Home() {
   return (
