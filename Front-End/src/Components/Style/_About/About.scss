@@ -1,5 +1,6 @@
 // Imports
 @import "../Variables/backgrounds";
+@import "../Variables/fonts";
 
 .about-container {
   display: flex;
@@ -30,6 +31,8 @@
       height: 30%;
       width: 45%;
       border-radius: 10px;
+      font-family: $font-home;
+      color: $fontColor-white;
     }
   }
 }
