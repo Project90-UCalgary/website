@@ -7,6 +7,7 @@ import './App.scss';
 // Components
 import NavBar from './Components/_NavBar/NavBar';
 import Home from "./Components/_Homepage/Home";
+import About from "./Components/_About/About";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       </header>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
       </Routes>
     </div>
   );
