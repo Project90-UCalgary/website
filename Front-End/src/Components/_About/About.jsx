@@ -8,7 +8,12 @@ export default function Home() {
   return (
     <Fragment>
       <div className="about-container">
-        <section className="items-container"></section>
+        <ul className="items-container">
+          <li className="item">Gallery</li>
+          <li className="item">Team</li>
+          <li className="item">Projects</li>
+          <li className="item">FAQ</li>
+        </ul>
       </div>
     </Fragment>
   );
