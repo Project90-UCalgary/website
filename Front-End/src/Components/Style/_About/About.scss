@@ -1,0 +1,9 @@
+// Imports
+@import "../Variables/backgrounds";
+
+.about-container {
+  display: flex;
+  background-color: $global_background;
+  height: 90%;
+  width: 100%;
+}
