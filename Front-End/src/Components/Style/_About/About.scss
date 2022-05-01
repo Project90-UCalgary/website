@@ -4,11 +4,43 @@
 
 .about-container {
   display: flex;
+  flex-direction: column;
   background-color: #b8e3ff;
   justify-content: center;
   align-items: flex-start;
   height: 90%;
   width: 100%;
+  font-family: $font-home;
+
+  .story-container {
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .story-title {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .purpose-container {
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .purpose-title {
+      display: flex;
+      align-items: center;
+    }
+
+    .purpose-items {
+      list-style: decimal;
+      .purpose-item {
+      }
+    }
+  }
 
   .items-container {
     display: flex;
@@ -16,22 +48,20 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 30px;
-    height: 20%;
     width: 85%;
     background-color: transparent;
     border-radius: 15px;
     list-style: none;
-    padding: 0;
 
     .item {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 2px;
       background-color: rgba(0, 0, 0, 0.5);
       height: 30%;
       width: 45%;
       border-radius: 10px;
-      font-family: $font-home;
       color: $fontColor-white;
     }
   }
