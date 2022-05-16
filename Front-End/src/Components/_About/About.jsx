@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <Fragment>
       <div className="about-container">
+        {/* Story Part */}
         <div className="story-container">
           <h1 className="story-title">
             <ion-icon name="mic-outline"></ion-icon> Our Story
@@ -48,6 +49,7 @@ export default function Home() {
             You can make a difference!
           </p>
         </div>
+        {/* Purpose Part */}
         <div className="purpose-container">
           <h1 className="purpose-title">
             <ion-icon name="medal-outline"></ion-icon> Our Purpose
@@ -60,6 +62,24 @@ export default function Home() {
               on practical design projects.
             </li>
             <li className="purpose-item">
+              <b>To engage the campus community</b> and raise awareness for
+              international development through campus wide seminars and events.
+            </li>
+          </ul>
+        </div>
+        {/* Goals Part */}
+        <div className="goals-container">
+          <h1 className="goals-title">
+            <ion-icon name="medal-outline"></ion-icon> Our Goals
+          </h1>
+          <hr></hr>
+          <ul className="goals-items">
+            <li className="goals-item">
+              <b>To allow students the opportunity</b> to apply academic
+              knowledge and facilitate change by partnering with existing NGOs
+              on practical design projects.
+            </li>
+            <li className="goals-item">
               <b>To engage the campus community</b> and raise awareness for
               international development through campus wide seminars and events.
             </li>

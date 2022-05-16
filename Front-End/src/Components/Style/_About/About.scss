@@ -37,8 +37,18 @@
 
     .purpose-items {
       list-style: decimal;
-      .purpose-item {
-      }
+    }
+  }
+
+  .goals-container {
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .goals-title {
+      display: flex;
+      align-items: center;
     }
   }
 
