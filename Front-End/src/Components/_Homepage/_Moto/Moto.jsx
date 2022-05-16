@@ -1,10 +1,24 @@
+// Components
+import More from "./_More";
+
 // Style
-import "../Style/_Homepage/Moto.scss";
+import "../../Style/_Homepage/Moto.scss";
 
 // Libraries
 import { Fragment } from "react";
 
 export default function Moto(props) {
+  const { state, setState } = props;
+
+  // Helper Functions
+  const changeText = (state) => {
+    const { showText } = state;
+    if (!showText) {
+      return setState((prevState) => ({ ...prevState, showText: true }));
+    }
+    return setState((prevState) => ({ ...prevState, showText: false }));
+  };
+
   return (
     <Fragment>
       <div className="moto-container">
@@ -19,6 +33,10 @@ export default function Moto(props) {
           We’re thrilled to be a diverse student group representing a wide
           variety of nationalities, faiths, and degree majors.
         </p>
+        <More state={state} />
+        <button className="show-more" onClick={() => changeText(state)}>
+          Show More
+        </button>
       </div>
     </Fragment>
   );
