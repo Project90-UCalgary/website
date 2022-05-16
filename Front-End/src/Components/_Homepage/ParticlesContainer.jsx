@@ -27,7 +27,7 @@ export default function ParticlesContainer(props) {
                 enable: true,
                 mode: "repulse",
               },
-              resize: true,
+              resize: false,
             },
             modes: {
               bubble: {
