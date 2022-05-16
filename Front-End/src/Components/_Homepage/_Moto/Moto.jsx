@@ -14,14 +14,27 @@ export default function Moto(props) {
   const changeText = (state) => {
     const { showText } = state;
     if (!showText) {
-      return setState((prevState) => ({ ...prevState, showText: true }));
+      return setState((prevState) => ({
+        ...prevState,
+        showText: true,
+        padding: "30%",
+        top: "0%",
+      }));
     }
-    return setState((prevState) => ({ ...prevState, showText: false }));
+    return setState((prevState) => ({
+      ...prevState,
+      showText: false,
+      padding: "0%",
+      top: "15%",
+    }));
   };
 
   return (
     <Fragment>
-      <div className="moto-container">
+      <div
+        className="moto-container"
+        style={{ paddingTop: state.padding, top: state.top }}
+      >
         <button className="join-us-btn">Join Us!</button>
         <p className="moto-text">
           Project 90 is a club that aims to provide engineering resources to

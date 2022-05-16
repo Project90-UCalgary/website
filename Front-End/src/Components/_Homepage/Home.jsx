@@ -10,7 +10,11 @@ import ParticlesContainer from "./ParticlesContainer";
 
 export default function Home() {
   // Make a multi purpose state.
-  const [state, setState] = useState({ showText: false });
+  const [state, setState] = useState({
+    showText: false,
+    padding: "0%",
+    top: "15%",
+  });
 
   return (
     <Fragment>
